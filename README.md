@@ -21,4 +21,5 @@
 ### Notes
 I couldn't locate the README in the Codepath instructions for this part.
 I played around more with the alignment functions and that took more time.
+I need to get the right cords to connect my iphone to my laptop so I can test it out next time.
 
