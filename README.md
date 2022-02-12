@@ -16,7 +16,7 @@
 
 
 
-<img src="https://i.imgur.com/KGKTCpL.gif" width=250><br>
+<img src="<img src="https://i.imgur.com/9xPKGYI.gif" width=250><br>" width=250><br>
 
 ### Notes
 I couldn't locate the README in the Codepath instructions for this part.
