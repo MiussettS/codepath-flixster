@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B08AE6E570A4325A4D0B93C /* Pods_Tipster_TipsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1E386BB2B6523C53B15649 /* Pods_Tipster_TipsterUITests.framework */; };
+		52BB402BB5E2990075C99B0D /* Pods_Tipster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1677A2B718D236CB17FB9F2 /* Pods_Tipster.framework */; };
+		B894430E7BB0431265BECAD2 /* Pods_TipsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C74F7E3A561D58F29A793B /* Pods_TipsterTests.framework */; };
+		F3099FC927B6BB9900EC88A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FC827B6BB9900EC88A8 /* AppDelegate.swift */; };
+		F3099FCB27B6BB9900EC88A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FCA27B6BB9900EC88A8 /* SceneDelegate.swift */; };
+		F3099FCD27B6BB9900EC88A8 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FCC27B6BB9900EC88A8 /* MoviesViewController.swift */; };
+		F3099FD027B6BB9900EC88A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3099FCE27B6BB9900EC88A8 /* Main.storyboard */; };
+		F3099FD227B6BB9E00EC88A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3099FD127B6BB9E00EC88A8 /* Assets.xcassets */; };
+		F3099FD527B6BB9E00EC88A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3099FD327B6BB9E00EC88A8 /* LaunchScreen.storyboard */; };
+		F3099FE027B6BB9E00EC88A8 /* TipsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FDF27B6BB9E00EC88A8 /* TipsterTests.swift */; };
+		F3099FEA27B6BB9E00EC88A8 /* TipsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FE927B6BB9E00EC88A8 /* TipsterUITests.swift */; };
+		F3099FEC27B6BB9E00EC88A8 /* TipsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FEB27B6BB9E00EC88A8 /* TipsterUITestsLaunchTests.swift */; };
+		F3099FF927B6E8E400EC88A8 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3099FF827B6E8E400EC88A8 /* MovieCell.swift */; };
+		F3099FFC27B6F60700EC88A8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F3099FFB27B6F60700EC88A8 /* AlamofireImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3099FDC27B6BB9E00EC88A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3099FBD27B6BB9800EC88A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3099FC427B6BB9800EC88A8;
+			remoteInfo = Tipster;
+		};
+		F3099FE627B6BB9E00EC88A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3099FBD27B6BB9800EC88A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3099FC427B6BB9800EC88A8;
+			remoteInfo = Tipster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		119357C493C06D439AB1B4DC /* Pods-Tipster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster.debug.xcconfig"; path = "Target Support Files/Pods-Tipster/Pods-Tipster.debug.xcconfig"; sourceTree = "<group>"; };
+		145FF2A8F94EA071CB2F8D46 /* Pods-TipsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipsterTests.debug.xcconfig"; path = "Target Support Files/Pods-TipsterTests/Pods-TipsterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C83C5A1B01C7A567DB12264 /* Pods-Tipster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster.release.xcconfig"; path = "Target Support Files/Pods-Tipster/Pods-Tipster.release.xcconfig"; sourceTree = "<group>"; };
+		64B88A69407D3CB807BF9350 /* Pods-Tipster-TipsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster-TipsterUITests.release.xcconfig"; path = "Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B88F53A0CC95E87B40AB745B /* Pods-Tipster-TipsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tipster-TipsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1677A2B718D236CB17FB9F2 /* Pods_Tipster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tipster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F0BBD4346C6F630C9C4A67 /* Pods-TipsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TipsterTests.release.xcconfig"; path = "Target Support Files/Pods-TipsterTests/Pods-TipsterTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2C74F7E3A561D58F29A793B /* Pods_TipsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TipsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3099FC527B6BB9900EC88A8 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3099FC827B6BB9900EC88A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3099FCA27B6BB9900EC88A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3099FCC27B6BB9900EC88A8 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		F3099FCF27B6BB9900EC88A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3099FD127B6BB9E00EC88A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3099FD427B6BB9E00EC88A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3099FD627B6BB9E00EC88A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3099FDB27B6BB9E00EC88A8 /* TipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3099FDF27B6BB9E00EC88A8 /* TipsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsterTests.swift; sourceTree = "<group>"; };
+		F3099FE527B6BB9E00EC88A8 /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3099FE927B6BB9E00EC88A8 /* TipsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsterUITests.swift; sourceTree = "<group>"; };
+		F3099FEB27B6BB9E00EC88A8 /* TipsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3099FF827B6E8E400EC88A8 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		FE1E386BB2B6523C53B15649 /* Pods_Tipster_TipsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tipster_TipsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3099FC227B6BB9800EC88A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3099FFC27B6F60700EC88A8 /* AlamofireImage in Frameworks */,
+				52BB402BB5E2990075C99B0D /* Pods_Tipster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FD827B6BB9E00EC88A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B894430E7BB0431265BECAD2 /* Pods_TipsterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FE227B6BB9E00EC88A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B08AE6E570A4325A4D0B93C /* Pods_Tipster_TipsterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78B9C67C7F4A0D241E3B7450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				119357C493C06D439AB1B4DC /* Pods-Tipster.debug.xcconfig */,
+				3C83C5A1B01C7A567DB12264 /* Pods-Tipster.release.xcconfig */,
+				B88F53A0CC95E87B40AB745B /* Pods-Tipster-TipsterUITests.debug.xcconfig */,
+				64B88A69407D3CB807BF9350 /* Pods-Tipster-TipsterUITests.release.xcconfig */,
+				145FF2A8F94EA071CB2F8D46 /* Pods-TipsterTests.debug.xcconfig */,
+				C7F0BBD4346C6F630C9C4A67 /* Pods-TipsterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3440706E63E0EC30468D5B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1677A2B718D236CB17FB9F2 /* Pods_Tipster.framework */,
+				FE1E386BB2B6523C53B15649 /* Pods_Tipster_TipsterUITests.framework */,
+				F2C74F7E3A561D58F29A793B /* Pods_TipsterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3099FBC27B6BB9800EC88A8 = {
+			isa = PBXGroup;
+			children = (
+				F3099FC727B6BB9900EC88A8 /* Tipster */,
+				F3099FDE27B6BB9E00EC88A8 /* TipsterTests */,
+				F3099FE827B6BB9E00EC88A8 /* TipsterUITests */,
+				F3099FC627B6BB9900EC88A8 /* Products */,
+				78B9C67C7F4A0D241E3B7450 /* Pods */,
+				B3440706E63E0EC30468D5B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3099FC627B6BB9900EC88A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3099FC527B6BB9900EC88A8 /* Tipster.app */,
+				F3099FDB27B6BB9E00EC88A8 /* TipsterTests.xctest */,
+				F3099FE527B6BB9E00EC88A8 /* TipsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3099FC727B6BB9900EC88A8 /* Tipster */ = {
+			isa = PBXGroup;
+			children = (
+				F3099FC827B6BB9900EC88A8 /* AppDelegate.swift */,
+				F3099FCA27B6BB9900EC88A8 /* SceneDelegate.swift */,
+				F3099FCC27B6BB9900EC88A8 /* MoviesViewController.swift */,
+				F3099FCE27B6BB9900EC88A8 /* Main.storyboard */,
+				F3099FF827B6E8E400EC88A8 /* MovieCell.swift */,
+				F3099FD127B6BB9E00EC88A8 /* Assets.xcassets */,
+				F3099FD327B6BB9E00EC88A8 /* LaunchScreen.storyboard */,
+				F3099FD627B6BB9E00EC88A8 /* Info.plist */,
+			);
+			path = Tipster;
+			sourceTree = "<group>";
+		};
+		F3099FDE27B6BB9E00EC88A8 /* TipsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3099FDF27B6BB9E00EC88A8 /* TipsterTests.swift */,
+			);
+			path = TipsterTests;
+			sourceTree = "<group>";
+		};
+		F3099FE827B6BB9E00EC88A8 /* TipsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3099FE927B6BB9E00EC88A8 /* TipsterUITests.swift */,
+				F3099FEB27B6BB9E00EC88A8 /* TipsterUITestsLaunchTests.swift */,
+			);
+			path = TipsterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3099FC427B6BB9800EC88A8 /* Tipster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3099FEF27B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "Tipster" */;
+			buildPhases = (
+				50E4451554C1C8F01AD0FD50 /* [CP] Check Pods Manifest.lock */,
+				F3099FC127B6BB9800EC88A8 /* Sources */,
+				F3099FC227B6BB9800EC88A8 /* Frameworks */,
+				F3099FC327B6BB9800EC88A8 /* Resources */,
+				9BCC113A1ADB7870E607048E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tipster;
+			packageProductDependencies = (
+				F3099FFB27B6F60700EC88A8 /* AlamofireImage */,
+			);
+			productName = Tipster;
+			productReference = F3099FC527B6BB9900EC88A8 /* Tipster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3099FDA27B6BB9E00EC88A8 /* TipsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3099FF227B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "TipsterTests" */;
+			buildPhases = (
+				E0F7EE714CD96F7473C15DCF /* [CP] Check Pods Manifest.lock */,
+				F3099FD727B6BB9E00EC88A8 /* Sources */,
+				F3099FD827B6BB9E00EC88A8 /* Frameworks */,
+				F3099FD927B6BB9E00EC88A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3099FDD27B6BB9E00EC88A8 /* PBXTargetDependency */,
+			);
+			name = TipsterTests;
+			productName = TipsterTests;
+			productReference = F3099FDB27B6BB9E00EC88A8 /* TipsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3099FE427B6BB9E00EC88A8 /* TipsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3099FF527B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "TipsterUITests" */;
+			buildPhases = (
+				6A3D24711B56156AE35E9B24 /* [CP] Check Pods Manifest.lock */,
+				F3099FE127B6BB9E00EC88A8 /* Sources */,
+				F3099FE227B6BB9E00EC88A8 /* Frameworks */,
+				F3099FE327B6BB9E00EC88A8 /* Resources */,
+				4839442F87F38616AA19E814 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3099FE727B6BB9E00EC88A8 /* PBXTargetDependency */,
+			);
+			name = TipsterUITests;
+			productName = TipsterUITests;
+			productReference = F3099FE527B6BB9E00EC88A8 /* TipsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3099FBD27B6BB9800EC88A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F3099FC427B6BB9800EC88A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F3099FDA27B6BB9E00EC88A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F3099FC427B6BB9800EC88A8;
+					};
+					F3099FE427B6BB9E00EC88A8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F3099FC427B6BB9800EC88A8;
+					};
+				};
+			};
+			buildConfigurationList = F3099FC027B6BB9800EC88A8 /* Build configuration list for PBXProject "Tipster" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3099FBC27B6BB9800EC88A8;
+			packageReferences = (
+				F3099FFA27B6F60700EC88A8 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = F3099FC627B6BB9900EC88A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3099FC427B6BB9800EC88A8 /* Tipster */,
+				F3099FDA27B6BB9E00EC88A8 /* TipsterTests */,
+				F3099FE427B6BB9E00EC88A8 /* TipsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3099FC327B6BB9800EC88A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3099FD527B6BB9E00EC88A8 /* LaunchScreen.storyboard in Resources */,
+				F3099FD227B6BB9E00EC88A8 /* Assets.xcassets in Resources */,
+				F3099FD027B6BB9900EC88A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FD927B6BB9E00EC88A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FE327B6BB9E00EC88A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4839442F87F38616AA19E814 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tipster-TipsterUITests/Pods-Tipster-TipsterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E4451554C1C8F01AD0FD50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tipster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A3D24711B56156AE35E9B24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tipster-TipsterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BCC113A1ADB7870E607048E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tipster/Pods-Tipster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F7EE714CD96F7473C15DCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TipsterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3099FC127B6BB9800EC88A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3099FCD27B6BB9900EC88A8 /* MoviesViewController.swift in Sources */,
+				F3099FC927B6BB9900EC88A8 /* AppDelegate.swift in Sources */,
+				F3099FF927B6E8E400EC88A8 /* MovieCell.swift in Sources */,
+				F3099FCB27B6BB9900EC88A8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FD727B6BB9E00EC88A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3099FE027B6BB9E00EC88A8 /* TipsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3099FE127B6BB9E00EC88A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3099FEC27B6BB9E00EC88A8 /* TipsterUITestsLaunchTests.swift in Sources */,
+				F3099FEA27B6BB9E00EC88A8 /* TipsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3099FDD27B6BB9E00EC88A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3099FC427B6BB9800EC88A8 /* Tipster */;
+			targetProxy = F3099FDC27B6BB9E00EC88A8 /* PBXContainerItemProxy */;
+		};
+		F3099FE727B6BB9E00EC88A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3099FC427B6BB9800EC88A8 /* Tipster */;
+			targetProxy = F3099FE627B6BB9E00EC88A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3099FCE27B6BB9900EC88A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3099FCF27B6BB9900EC88A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3099FD327B6BB9E00EC88A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3099FD427B6BB9E00EC88A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3099FED27B6BB9E00EC88A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3099FEE27B6BB9E00EC88A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3099FF027B6BB9E00EC88A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 119357C493C06D439AB1B4DC /* Pods-Tipster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tipster/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.Tipster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3099FF127B6BB9E00EC88A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C83C5A1B01C7A567DB12264 /* Pods-Tipster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tipster/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.Tipster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3099FF327B6BB9E00EC88A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 145FF2A8F94EA071CB2F8D46 /* Pods-TipsterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.TipsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipster.app/Tipster";
+			};
+			name = Debug;
+		};
+		F3099FF427B6BB9E00EC88A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7F0BBD4346C6F630C9C4A67 /* Pods-TipsterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.TipsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipster.app/Tipster";
+			};
+			name = Release;
+		};
+		F3099FF627B6BB9E00EC88A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B88F53A0CC95E87B40AB745B /* Pods-Tipster-TipsterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.TipsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tipster;
+			};
+			name = Debug;
+		};
+		F3099FF727B6BB9E00EC88A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B88A69407D3CB807BF9350 /* Pods-Tipster-TipsterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGTRL5HWMT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miussetts.TipsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tipster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3099FC027B6BB9800EC88A8 /* Build configuration list for PBXProject "Tipster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3099FED27B6BB9E00EC88A8 /* Debug */,
+				F3099FEE27B6BB9E00EC88A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3099FEF27B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "Tipster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3099FF027B6BB9E00EC88A8 /* Debug */,
+				F3099FF127B6BB9E00EC88A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3099FF227B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "TipsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3099FF327B6BB9E00EC88A8 /* Debug */,
+				F3099FF427B6BB9E00EC88A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3099FF527B6BB9E00EC88A8 /* Build configuration list for PBXNativeTarget "TipsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3099FF627B6BB9E00EC88A8 /* Debug */,
+				F3099FF727B6BB9E00EC88A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3099FFA27B6F60700EC88A8 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3099FFB27B6F60700EC88A8 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3099FFA27B6F60700EC88A8 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3099FBD27B6BB9800EC88A8 /* Project object */;
+}
